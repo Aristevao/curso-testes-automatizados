@@ -84,10 +84,15 @@ const App = () => {
             Developers App
           </h1>
       </header>
-      <label htmlFor="input1">Type the skill you would like to search</label>
+      <label id="skillLabel" htmlFor="input1">Skill Name</label>
         <input id="input-skill" className='input1'></input>
-      <a id="search-button" className="button1" onClick={() => loadSkill()}>Search</a>
-        <a id="load-skills-button" className="button1" onClick={() => loadSkills()}>All Skills</a>
+      <label htmlFor="input1">Developers</label>
+        <input id="input-developer" className='input1'></input>
+      <label htmlFor="input1">Technologies</label>
+        <input id="input-technology" className='input1'></input>
+      <label htmlFor="input1">Roles</label>
+        <input id="input-role" className='input1'></input>
+        <a id="load-skills-button" className="button1" onClick={() => loadSkills()}>Add Skill</a>
           {showSkill? name : ''}
           {showSkills? listSkills: ''}
     </div>
